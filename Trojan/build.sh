@@ -31,4 +31,4 @@ if [ ! -f "$dockerfile" ]; then
 fi
 
 docker build -t trojan .
-
+docker run -itd -p 10808:10808 trojan
